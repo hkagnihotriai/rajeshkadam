@@ -23,17 +23,17 @@ export function Footer() {
         </div>
 
         <div className="space-y-3 text-sm">
-          <p className="flex items-center gap-2">
+          <a href="tel:+919321996833" className="flex items-center gap-2 hover:text-gold">
             <Phone size={16} className="shrink-0" />
-            +91 00000 00000
-          </p>
+            +91 93219 96833
+          </a>
           <p className="flex items-center gap-2">
             <Mail size={16} className="shrink-0" />
             contact@rajeshkadam.example
           </p>
           <p className="text-xs text-cream/50">
-            Contact details above are placeholders — replace with the real phone
-            number, email, and WhatsApp link before launch.
+            Email address above is a placeholder — replace with the real email
+            and WhatsApp link before launch.
           </p>
         </div>
       </div>
