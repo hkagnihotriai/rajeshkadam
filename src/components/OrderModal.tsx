@@ -1,6 +1,7 @@
 "use client";
 
-import { X, QrCode } from "lucide-react";
+import Image from "next/image";
+import { X } from "lucide-react";
 import type { Book } from "@/lib/data";
 
 type Props = {
@@ -8,7 +9,7 @@ type Props = {
   onClose: () => void;
 };
 
-const qrImageUrl = process.env.NEXT_PUBLIC_UPI_QR_IMAGE_URL;
+const qrImageUrl = process.env.NEXT_PUBLIC_UPI_QR_IMAGE_URL || "/images/upi-qr.png";
 const googleFormEmbedUrl = process.env.NEXT_PUBLIC_GOOGLE_FORM_EMBED_URL;
 
 export function OrderModal({ book, onClose }: Props) {
@@ -39,21 +40,13 @@ export function OrderModal({ book, onClose }: Props) {
           </p>
 
           <div className="mt-4 flex justify-center">
-            {qrImageUrl ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={qrImageUrl}
-                alt="UPI QR code"
-                className="h-48 w-48 rounded-xl border border-ink/10 bg-white object-contain"
-              />
-            ) : (
-              <div className="flex h-48 w-48 flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-ink/20 bg-white/60 text-center text-xs text-ink/50">
-                <QrCode size={32} />
-                <span className="px-4">
-                  UPI QR code placeholder — set NEXT_PUBLIC_UPI_QR_IMAGE_URL
-                </span>
-              </div>
-            )}
+            <Image
+              src={qrImageUrl}
+              alt="UPI QR code for Rajesh Anant Kadam"
+              width={220}
+              height={280}
+              className="w-48 rounded-xl border border-ink/10 bg-white object-contain"
+            />
           </div>
         </div>
 

@@ -96,14 +96,17 @@ export const stats = [
 export type Book = {
   slug: string;
   title: string;
+  author: string;
   blurb: string;
   price: number;
+  endorsements?: { quote: string; name: string; context: string }[];
 };
 
 export const books: Book[] = [
   {
     slug: "freedom-in-and-out",
     title: "Freedom In and Out: A Handbook on Panch Kosh",
+    author: "Rajesh Anant Kadam",
     blurb:
       "A practical guide to the five sheaths of the self, translating ancient Vedic psychology into everyday tools for inner freedom.",
     price: 399,
@@ -111,9 +114,30 @@ export const books: Book[] = [
   {
     slug: "from-hurt-to-harmony",
     title: "From Hurt to Harmony",
+    author: "Sita Kadam-Zope & Rajesh Anant Kadam",
     blurb:
-      "Drawing on decades of counselling families, this book offers a compassionate path from emotional wounds to lasting harmony.",
+      "Heal yourself, heal your relationships, heal your world — a father-daughter collaboration blending decades of counselling wisdom with the voice of modern emotional experience.",
     price: 349,
+    endorsements: [
+      {
+        quote:
+          "A rare blend of father-daughter perspectives, bringing together decades of counselling wisdom and the voice of modern emotional experience.",
+        name: "Hrishikesh Mafatlal",
+        context: "Chairman, Arvind Mafatlal Group",
+      },
+      {
+        quote:
+          "The authors brilliantly decode complex Vedic concepts into practical tools, making ancient wisdom highly actionable for modern readers.",
+        name: "Commodore Prashant Shidhaye",
+        context: "Vishisht Seva Medal Awardee, Indian Navy",
+      },
+      {
+        quote:
+          "This book goes beyond theory and offers a clear path to understanding conflicts, healing emotional wounds, and building lasting harmony in every relationship.",
+        name: "DasGadadhar Das",
+        context: "Founder, Bhaktivedanta Vidyabhavan Gurukul, Ranchi",
+      },
+    ],
   },
 ];
 

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const credentials = [
   "BA, PGDPC, MS in Counselling and Psychotherapy",
   "Head, Department of Spiritual Care — Bhaktivedanta Hospital & Research Institute, Mira Road",
@@ -16,7 +18,18 @@ export function About() {
           A bridge between two ways of knowing the human heart.
         </h2>
 
-        <div className="mt-10 grid gap-10 md:grid-cols-2">
+        <div className="mt-10 grid gap-10 md:grid-cols-[minmax(0,260px)_1fr]">
+          <div className="mx-auto w-48 shrink-0 overflow-hidden rounded-3xl shadow-lg md:mx-0 md:w-full">
+            <Image
+              src="/images/rajesh-profile.jpg"
+              alt="Rajesh Anant Kadam"
+              width={600}
+              height={800}
+              className="h-full w-full object-cover"
+              priority
+            />
+          </div>
+
           <div className="space-y-4 text-ink/80">
             <p>
               Rajesh Anant Kadam has spent over two decades helping people find
@@ -36,16 +49,16 @@ export function About() {
               depth.
             </p>
           </div>
-
-          <ul className="space-y-3 rounded-3xl bg-sandalwood p-6">
-            {credentials.map((item) => (
-              <li key={item} className="flex gap-3 text-sm text-ink/80">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-burnt-orange" />
-                {item}
-              </li>
-            ))}
-          </ul>
         </div>
+
+        <ul className="mt-10 grid gap-3 rounded-3xl bg-sandalwood p-6 sm:grid-cols-2">
+          {credentials.map((item) => (
+            <li key={item} className="flex gap-3 text-sm text-ink/80">
+              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-burnt-orange" />
+              {item}
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
