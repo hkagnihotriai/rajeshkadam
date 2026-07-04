@@ -118,7 +118,7 @@ export const books: Book[] = [
     author: "Sita Kadam-Zope & Rajesh Anant Kadam",
     blurb:
       "Heal yourself, heal your relationships, heal your world — a father-daughter collaboration blending decades of counselling wisdom with the voice of modern emotional experience.",
-    price: 685,
+    price: 495,
     coverImageUrl: "/images/from-hurt-to-harmony-cover.jpg",
     endorsements: [
       {
