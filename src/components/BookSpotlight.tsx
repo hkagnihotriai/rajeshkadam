@@ -12,7 +12,7 @@ export function BookSpotlight() {
   if (!book || !book.endorsements) return null;
 
   return (
-    <section id="from-hurt-to-harmony" className="px-6 py-24">
+    <section id="books" className="px-6 py-24">
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-2xl text-center">
           <p className="font-accent italic text-gold">Featured Book</p>

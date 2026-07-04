@@ -1,5 +1,6 @@
 import { panchKosh, stats } from "@/lib/data";
 import { PanchKoshRings } from "@/components/icons/DecorativeArt";
+import { AssessmentCallout } from "@/components/AssessmentCallout";
 
 export function Philosophy() {
   return (
@@ -48,6 +49,8 @@ export function Philosophy() {
             </div>
           ))}
         </div>
+
+        <AssessmentCallout />
       </div>
     </section>
   );

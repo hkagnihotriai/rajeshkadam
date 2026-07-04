@@ -5,7 +5,6 @@ import { Philosophy } from "@/components/Philosophy";
 import { Workshops } from "@/components/Workshops";
 import { Testimonials } from "@/components/Testimonials";
 import { BookSpotlight } from "@/components/BookSpotlight";
-import { Books } from "@/components/Books";
 import { Insights } from "@/components/Insights";
 import { Footer } from "@/components/Footer";
 
@@ -20,7 +19,6 @@ export default function Home() {
         <Workshops />
         <Testimonials />
         <BookSpotlight />
-        <Books />
         <Insights />
       </main>
       <Footer />
