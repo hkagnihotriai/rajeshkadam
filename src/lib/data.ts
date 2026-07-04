@@ -99,6 +99,8 @@ export type Book = {
   author: string;
   blurb: string;
   price: number;
+  free?: boolean;
+  callout?: string;
   coverImageUrl?: string;
   endorsements?: { quote: string; name: string; context: string }[];
 };
@@ -110,7 +112,9 @@ export const books: Book[] = [
     author: "Rajesh Anant Kadam",
     blurb:
       "A practical guide to the five sheaths of the self, translating ancient Vedic psychology into everyday tools for inner freedom.",
-    price: 399,
+    price: 0,
+    free: true,
+    callout: "Use this free tool to assess the Panch Kosh of your relationships.",
   },
   {
     slug: "from-hurt-to-harmony",
@@ -123,21 +127,51 @@ export const books: Book[] = [
     endorsements: [
       {
         quote:
-          "A rare blend of father-daughter perspectives, bringing together decades of counselling wisdom and the voice of modern emotional experience.",
+          "A rare blend of father-daughter perspectives, bringing together decades of counselling wisdom and the voice of modern emotional experience....",
         name: "Hrishikesh Mafatlal",
         context: "Chairman, Arvind Mafatlal Group",
       },
       {
         quote:
-          "The authors brilliantly decode complex Vedic concepts into practical tools, making ancient wisdom highly actionable for modern readers.",
+          "In an age of overwhelmed minds and strained relationships, this book places the power of change back into the reader's own hands, gently, practically, and without judgment.",
+        name: "Dr. Vijaykumar Gawli",
+        context: "International Clinical Research Mentor",
+      },
+      {
+        quote:
+          "The book does not merely discuss problems, it gently leads the reader toward responsibility, self-awareness, acceptance, and inner transformation....",
+        name: "Neha and Nirdosh Sobti",
+        context: "Founders, The Madhavas Rock Band",
+      },
+      {
+        quote:
+          "The authors brilliantly decode complex Vedic concepts into practical tools, making ancient wisdom highly actionable for modern readers. The book's greatest strength is its unique dual narrative voice. Rather than offering easy answers, it demands rigorous self-examination and cultivates intellectual humility....",
         name: "Commodore Prashant Shidhaye",
         context: "Vishisht Seva Medal Awardee, Indian Navy",
       },
       {
         quote:
-          "This book goes beyond theory and offers a clear path to understanding conflicts, healing emotional wounds, and building lasting harmony in every relationship.",
+          "A refreshing blend of practical wisdom, compassionate counseling, and timeless spiritual insights. The authors skillfully guide readers from self-reflection to self-transformation...",
+        name: "Dr. Gaurav Gangvani",
+        context: "Interventional Radiologist & Health Educator, Lilavati Hospital and Bhaktivedanta Hospital, Mumbai",
+      },
+      {
+        quote:
+          "This book goes beyond theory and offers a clear path to understanding conflicts, healing emotional wounds, and building lasting harmony in every relationship. Blending timeless spiritual insights with real-life situations, this book helps readers turn challenges into opportunities for growth, peace, and deeper connection.",
         name: "DasGadadhar Das",
         context: "Founder, Bhaktivedanta Vidyabhavan Gurukul, Ranchi",
+      },
+      {
+        quote:
+          "Whether struggling with family, marriage, friendships, or oneself, readers will find inspiration, clarity, and hope on every page of this remarkable book. Every chapter invites readers to understand themselves more deeply, uncover hidden patterns, and develop the inner strength needed for healthy relationships.",
+        name: "Paripurti Aditya Mane",
+        context: "Home Maker",
+      },
+      {
+        quote:
+          "Through stories based on real experiences and insights drawn from philosophy and Vedic wisdom, the book tries to offer a practical and deeply human perspective on relationships, responsibility, emotional awareness, and inner growth while making it relatable and relevant to today's society.",
+        name: "Brigadier Niranjan Jog",
+        context: "Sena Medal Awardee, Indian Army",
       },
     ],
   },

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { BookOpen } from "lucide-react";
+import { BookOpen, Sparkles } from "lucide-react";
 import { books } from "@/lib/data";
 import { useModal } from "@/components/providers/ModalProvider";
 
@@ -41,30 +41,22 @@ export function Books() {
               </p>
               <p className="mt-2 text-sm text-ink/70">{book.blurb}</p>
 
-              {book.endorsements && (
-                <div className="mt-4 space-y-3 border-t border-ink/10 pt-4">
-                  {book.endorsements.map((e) => (
-                    <div key={e.name}>
-                      <p className="font-accent italic text-sm text-ink/70">
-                        &ldquo;{e.quote}&rdquo;
-                      </p>
-                      <p className="mt-1 text-xs text-ink/50">
-                        — {e.name}, {e.context}
-                      </p>
-                    </div>
-                  ))}
+              {book.callout && (
+                <div className="mt-4 flex items-start gap-2 rounded-2xl bg-gold/15 p-4">
+                  <Sparkles size={16} className="mt-0.5 shrink-0 text-burnt-orange" />
+                  <p className="text-sm font-medium text-ink/80">{book.callout}</p>
                 </div>
               )}
 
               <div className="mt-4 flex items-center justify-between">
                 <span className="font-heading text-lg font-semibold text-burnt-orange">
-                  ₹{book.price}
+                  {book.free ? "Free" : `₹${book.price}`}
                 </span>
                 <button
                   onClick={() => openOrder(book)}
                   className="rounded-full bg-burnt-orange px-5 py-2 text-sm font-medium text-cream transition hover:bg-ink"
                 >
-                  Order copy
+                  {book.free ? "Get Free Copy" : "Order copy"}
                 </button>
               </div>
             </div>
