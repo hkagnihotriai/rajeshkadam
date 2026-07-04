@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { BookOpen } from "lucide-react";
 import { books } from "@/lib/data";
 import { useModal } from "@/components/providers/ModalProvider";
@@ -20,8 +21,17 @@ export function Books() {
         <div className="mt-12 grid gap-8 md:grid-cols-2">
           {books.map((book) => (
             <div key={book.slug} className="rounded-3xl bg-cream p-6 shadow-sm">
-              <div className="flex aspect-[3/4] items-center justify-center rounded-2xl bg-gradient-to-br from-burnt-orange/20 to-gold/30">
-                <BookOpen className="h-16 w-16 text-burnt-orange/60" />
+              <div className="relative flex aspect-[3/4] items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-burnt-orange/20 to-gold/30">
+                {book.coverImageUrl ? (
+                  <Image
+                    src={book.coverImageUrl}
+                    alt={`${book.title} cover`}
+                    fill
+                    className="object-cover"
+                  />
+                ) : (
+                  <BookOpen className="h-16 w-16 text-burnt-orange/60" />
+                )}
               </div>
               <h3 className="mt-5 font-heading text-xl font-semibold text-ink">
                 {book.title}
