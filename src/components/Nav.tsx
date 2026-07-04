@@ -5,12 +5,10 @@ import { Menu, X } from "lucide-react";
 import { useModal } from "@/components/providers/ModalProvider";
 
 const links = [
+  { href: "#top", label: "Home" },
   { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#philosophy", label: "Philosophy" },
-  { href: "#books", label: "Books" },
-  { href: "#testimonials", label: "Testimonials" },
   { href: "#workshops", label: "Workshops" },
+  { href: "#books", label: "Books" },
   { href: "#insights", label: "Insights" },
   { href: "#contact", label: "Contact" },
 ];
