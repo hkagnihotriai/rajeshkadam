@@ -20,8 +20,13 @@ export function Nav() {
   return (
     <header className="sticky top-0 z-40 border-b border-ink/10 bg-cream/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#top" className="font-heading text-lg font-semibold text-ink">
-          Rajesh Kadam
+        <a href="#top" className="flex items-center gap-2.5">
+          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-gold to-burnt-orange font-heading text-base font-semibold text-cream">
+            R
+          </span>
+          <span className="font-heading text-lg font-semibold text-ink">
+            Rajesh Kadam
+          </span>
         </a>
 
         <nav className="hidden items-center gap-6 lg:flex">
