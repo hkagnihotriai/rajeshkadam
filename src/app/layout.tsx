@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Lora, Cormorant_Garamond, Inter } from "next/font/google";
+import { ModalProvider } from "@/components/providers/ModalProvider";
 import "./globals.css";
 
 const lora = Lora({
@@ -39,7 +40,7 @@ export default function RootLayout({
       className={`${lora.variable} ${cormorant.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-cream text-ink font-body">
-        {children}
+        <ModalProvider>{children}</ModalProvider>
       </body>
     </html>
   );
