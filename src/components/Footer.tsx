@@ -1,4 +1,5 @@
 import { MapPin, Clock, Phone, Mail } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/DecorativeArt";
 
 export function Footer() {
   return (
@@ -31,9 +32,15 @@ export function Footer() {
             <Mail size={16} className="shrink-0" />
             rajeshkadam.rns@gmail.com
           </a>
-          <p className="text-xs text-cream/50">
-            Still need a WhatsApp link here before launch.
-          </p>
+          <a
+            href="https://wa.me/919321996833"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 hover:text-gold"
+          >
+            <WhatsAppIcon className="h-4 w-4 shrink-0" />
+            Chat on WhatsApp
+          </a>
         </div>
       </div>
 

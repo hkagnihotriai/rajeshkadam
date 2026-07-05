@@ -1,3 +1,18 @@
+export function WhatsAppIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 32 32" className={className} xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M16 2C8.3 2 2 8.3 2 16c0 2.5.7 4.9 1.9 7L2 30l7.2-1.9c2 1.1 4.3 1.7 6.8 1.7 7.7 0 14-6.3 14-14S23.7 2 16 2Z"
+        fill="currentColor"
+      />
+      <path
+        d="M12.2 9.8c-.3-.7-.6-.7-.9-.7h-.7c-.3 0-.7.1-1 .5-.4.4-1.4 1.3-1.4 3.2s1.4 3.7 1.6 4c.2.2 2.7 4.3 6.7 5.9 3.3 1.3 4 1.1 4.7 1 .7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.4-.3-.7-.5-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.2 12.5 12.5 10.5 12.2 9.8Z"
+        fill="var(--color-cream, #fdf6ea)"
+      />
+    </svg>
+  );
+}
+
 export function YouTubeIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 48 34" className={className} xmlns="http://www.w3.org/2000/svg">
