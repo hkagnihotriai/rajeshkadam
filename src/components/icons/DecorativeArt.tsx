@@ -1,3 +1,15 @@
+export function YouTubeIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 48 34" className={className} xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M47 5.3C46.4 3 44.6 1.2 42.3.6 38.3 0 24 0 24 0S9.7 0 5.7.6C3.4 1.2 1.6 3 1 5.3 0 9.4 0 17 0 17s0 7.6 1 11.7c.6 2.3 2.4 4.1 4.7 4.7 4 .6 18.3.6 18.3.6s14.3 0 18.3-.6c2.3-.6 4.1-2.4 4.7-4.7C48 24.6 48 17 48 17s0-7.6-1-11.7Z"
+        fill="currentColor"
+      />
+      <path d="M19 24.3 32 17l-13-7.3v14.6Z" fill="white" />
+    </svg>
+  );
+}
+
 export function LotusIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 100 60" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">

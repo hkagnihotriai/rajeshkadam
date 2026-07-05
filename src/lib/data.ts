@@ -290,3 +290,13 @@ export const insightPreviews: InsightPreview[] = [
     date: "Coming soon",
   },
 ];
+
+export const youtubeChannel = {
+  name: "Rajesh Anant Kadam",
+  handle: "@rajeshanantkadam",
+  url: "https://www.youtube.com/@rajeshanantkadam",
+};
+
+// Add YouTube video IDs here (the part after "v=" in a video URL) to feature
+// them as embedded players. Leave empty to show a "coming soon" placeholder.
+export const featuredVideoIds: string[] = [];

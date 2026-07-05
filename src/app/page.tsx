@@ -6,6 +6,7 @@ import { Workshops } from "@/components/Workshops";
 import { Testimonials } from "@/components/Testimonials";
 import { BookSpotlight } from "@/components/BookSpotlight";
 import { Insights } from "@/components/Insights";
+import { Videos } from "@/components/Videos";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         <Testimonials />
         <BookSpotlight />
         <Insights />
+        <Videos />
       </main>
       <Footer />
     </>
