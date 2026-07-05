@@ -15,7 +15,7 @@ export function About() {
       <div className="mx-auto max-w-5xl">
         <p className="font-accent italic text-gold">About Rajesh</p>
         <h2 className="mt-2 font-heading text-3xl font-semibold text-ink md:text-4xl">
-          A bridge between two ways of knowing the human heart.
+          A bridge between ancient wisdom and modern psychology
         </h2>
 
         <div className="mt-10 grid gap-10 md:grid-cols-[minmax(0,260px)_1fr]">

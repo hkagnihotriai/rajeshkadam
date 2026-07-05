@@ -23,7 +23,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Rajesh Kadam — Spiritual Wellness Counselling",
+  title: "RadiantSoul — Spiritual Wellness Counselling",
   description:
     "A quieter mind. A wiser heart. Spiritual counselling, workshops, and writing from Rajesh Anant Kadam, Head of the Department of Spiritual Care at Bhaktivedanta Hospital & Research Institute.",
 };

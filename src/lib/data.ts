@@ -93,6 +93,44 @@ export const stats = [
   { value: "2000+", label: "Families Counselled" },
 ];
 
+export type ImpactHighlight = {
+  title: string;
+  description: string;
+};
+
+export const impactHighlights: ImpactHighlight[] = [
+  {
+    title: "Founder, Bharatiya Institute for Healthy Minds",
+    description:
+      "Co-founded a new institute integrating Indian wisdom, scientific psychology, and compassionate service, building a team of doctors and counsellors to scale family wellness support.",
+  },
+  {
+    title: "National Keynote Speaker",
+    description:
+      "Invited to speak on the Panch Kosh framework at IIT Dhanbad's national conference and as keynote speaker at a National CSR Conclave, carrying Vedic psychology to audiences well beyond healthcare.",
+  },
+  {
+    title: "Academic Partnerships in Spiritual Care",
+    description:
+      "Designed and teaches Diploma courses in Spiritual Care for nursing and medical students, including a batch of 20 Japanese yoga teachers who travelled to train under him.",
+  },
+  {
+    title: "Rural Community Wellness",
+    description:
+      "Over four years of sustained outreach in villages near Mira Road, working toward structured, ongoing family wellness programs for the wider community.",
+  },
+  {
+    title: "Integrating Spiritual Care Into Medicine",
+    description:
+      "Partners directly with hospital departments, including Oncology, to bring spiritual and emotional support into clinical care, alongside dedicated end-of-life companionship for patients and families.",
+  },
+  {
+    title: "A Growing Body of Work",
+    description:
+      "Currently developing a digital Family Wellness Assessment tool and a new book of real spiritual-care stories, alongside his existing published titles.",
+  },
+];
+
 export type Book = {
   slug: string;
   title: string;

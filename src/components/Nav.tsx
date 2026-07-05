@@ -25,7 +25,7 @@ export function Nav() {
             R
           </span>
           <span className="font-heading text-lg font-semibold text-ink">
-            Rajesh Kadam
+            RadiantSoul
           </span>
         </a>
 
