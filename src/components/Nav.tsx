@@ -1,16 +1,18 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useModal } from "@/components/providers/ModalProvider";
 
 const links = [
-  { href: "#top", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#workshops", label: "Workshops" },
-  { href: "#books", label: "Books" },
-  { href: "#insights", label: "Insights" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#top", label: "Home" },
+  { href: "/#about", label: "About" },
+  { href: "/#workshops", label: "Workshops" },
+  { href: "/#books", label: "Books" },
+  { href: "/#insights", label: "Insights" },
+  { href: "/gallery", label: "Gallery" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export function Nav() {
@@ -20,24 +22,24 @@ export function Nav() {
   return (
     <header className="sticky top-0 z-40 border-b border-ink/10 bg-cream/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#top" className="flex items-center gap-2.5">
+        <Link href="/#top" className="flex items-center gap-2.5">
           <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-gold to-burnt-orange font-heading text-base font-semibold text-cream">
             R
           </span>
           <span className="font-heading text-lg font-semibold text-ink">
             RadiantSoul
           </span>
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-6 lg:flex">
           {links.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="text-sm text-ink/70 transition hover:text-burnt-orange"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -60,14 +62,14 @@ export function Nav() {
       {open && (
         <nav className="flex flex-col gap-1 border-t border-ink/10 px-6 pb-4 lg:hidden">
           {links.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
               className="py-2 text-sm text-ink/70 transition hover:text-burnt-orange"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <button
             onClick={() => {

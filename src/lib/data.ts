@@ -343,3 +343,51 @@ export const featuredVideoIds: string[] = [
   "tqigqk6OmWQ",
   "i_PShDDoSNo",
 ];
+
+export type GalleryImage = {
+  src: string;
+  caption: string;
+};
+
+export const galleryImages: GalleryImage[] = [
+  {
+    src: "/images/gallery/csr-conclave-speaking.jpg",
+    caption: "Speaking at the National CSR Conclave 2.0, Indore",
+  },
+  {
+    src: "/images/gallery/csr-conclave-award.jpg",
+    caption: "Recognized as a speaker at CSR Conclave 2.0",
+  },
+  {
+    src: "/images/gallery/iit-dhanbad-conference.jpg",
+    caption: "Invited to IIT Dhanbad's National Conference on Ancient Indian Text, Science and Technology",
+  },
+  {
+    src: "/images/gallery/press-coverage.jpg",
+    caption: "Press coverage of the CSR Conclave in an Indore newspaper",
+  },
+  {
+    src: "/images/gallery/guest-japanese-yoga-teachers.jpg",
+    caption: "Welcoming Japanese yoga teachers who completed the Diploma in Spiritual Care",
+  },
+  {
+    src: "/images/gallery/medical-students-lecture.jpg",
+    caption: "Teaching spiritual care to medical students from Latur",
+  },
+  {
+    src: "/images/gallery/hand-hygiene-day.jpg",
+    caption: "World Hand Hygiene Day awareness program with nursing students",
+  },
+  {
+    src: "/images/gallery/vedic-wisdom-address.jpg",
+    caption: "Addressing a community gathering on Vedic wisdom and wellness",
+  },
+  {
+    src: "/images/gallery/krishnarpanam-felicitation.jpg",
+    caption: "Felicitated at a community Sangha Shatabdi celebration",
+  },
+  {
+    src: "/images/gallery/aims-foundation.jpg",
+    caption: "AIMS Foundation, site of the Diploma in Spiritual Care for nursing students",
+  },
+];
